@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 26 19:20:47 2026
+
+@author: neha dhumal
+"""
+# Program to find average marks and topper marks
+
+# Taking number of students
+n = int(input("Enter number of students: "))
+
+# Creating an empty list
+marks = []
+
+# Taking marks input from user
+for i in range(n):
+    m = float(input(f"Enter marks of student {i+1}: "))
+    marks.append(m)
