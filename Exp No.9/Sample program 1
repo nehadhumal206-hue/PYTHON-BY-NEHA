@@ -1,27 +1,28 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr 21 11:02:11 2026
+Created on Tue Apr 28 09:26:50 2026
 
 @author: neha dhumal 
 """
+import math
 
-# Example list
-numbers = [10, 20, 30]
-try:
-    # Division operation
-    a = int(input("Enter a numerator: "))
-    b = int(input("Enter a denominator: "))
-    result = a / b
-    print("Division result:", result)
-    # Accessing a list element
-    print(numbers)
-    index = int(input("Enter index to access in the list [0,1,2]: "))
-    print("Element at index", index, "is", numbers[index])
-except ZeroDivisionError:
-    print("Error: Division by zero is not allowed.")
-except IndexError:
-    print("Error: Index out of range for the list.")
-except ValueError:
-    print("Error: Invalid input. Please enter an integer.")
-finally:
-    print("Program execution completed.")
+num = float(input("Enter a number for square root and power calculation: "))
+power = float(input("Enter the exponent value: "))
+
+angle_deg = float(input("Enter an angle in degrees for trigonometric functions: "))
+
+sqrt_value = math.sqrt(num)
+print(f"Square root of {num} is {sqrt_value}")
+
+power_value = math.pow(num, power)
+print(f"{num} raised to the power {power} is {power_value}")
+
+angle_rad = math.radians(angle_deg)
+
+sin_value = math.sin(angle_rad)
+cos_value = math.cos(angle_rad)
+tan_value = math.tan(angle_rad)
+
+print(f"Sin({angle_deg}°) = {sin_value}")
+print(f"Cos({angle_deg}°) = {cos_value}")
+print(f"Tan({angle_deg}°) = {tan_value}")
